@@ -1,14 +1,14 @@
 cask "skit" do
-  version "0.1.0"
+  version "0.2.0"
 
   on_arm do
-    sha256 "7cf19cef54326eae598c32111b63251dd3097d3cc49307752c9ac3c22b1e9068"
+    sha256 "5ec61de234c08d58994eb98498358a288d6d9f35a6052eb4c3386d8937c1736d"
 
     url "https://github.com/vlln/skit/releases/download/v#{version}/skit_Darwin_arm64.tar.gz"
   end
 
   on_intel do
-    sha256 "b59eda02443ea82a82a1bb8d7e2f3976c92df5a99829b71c4a6a57cf98036aca"
+    sha256 "559fd354847a379c3695683ba63b512cee80bf59739955572a4d38bdb73f36eb"
 
     url "https://github.com/vlln/skit/releases/download/v#{version}/skit_Darwin_x86_64.tar.gz"
   end
