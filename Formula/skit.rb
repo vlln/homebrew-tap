@@ -5,23 +5,23 @@
 class Skit < Formula
   desc "Small, reproducible Skill manager for agent ecosystems"
   homepage "https://github.com/vlln/skit"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vlln/skit/releases/download/v0.4.1/skit_Darwin_x86_64.tar.gz"
-      sha256 "e1841f127b315c8dcfc16013825f458bc8a93707b2efc19258602195498261a1"
+      url "https://github.com/vlln/skit/releases/download/v0.5.0/skit_Darwin_x86_64.tar.gz"
+      sha256 "a7d570e46fcec047359fd808a53f8a6a4386a758f000d9be39ee2bafb73c7413"
 
       define_method(:install) do
         bin.install "skit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vlln/skit/releases/download/v0.4.1/skit_Darwin_arm64.tar.gz"
-      sha256 "63323d0817c1579aa85bd2490250650351bfa0cbae7d3f6897b8374c02209869"
+      url "https://github.com/vlln/skit/releases/download/v0.5.0/skit_Darwin_arm64.tar.gz"
+      sha256 "f9fe1531c9c7d201cce119239ecbc18f715cb10359d09ba51c33fc0760ce7d55"
 
       define_method(:install) do
         bin.install "skit"
@@ -31,15 +31,15 @@ class Skit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vlln/skit/releases/download/v0.4.1/skit_Linux_x86_64.tar.gz"
-      sha256 "4dad8ae709a084fa6382c1d755d115325cbe0e40d4f9684598d107007522ca0a"
+      url "https://github.com/vlln/skit/releases/download/v0.5.0/skit_Linux_x86_64.tar.gz"
+      sha256 "a9197d9604ddd6b101712484abfbc46db1dc3f0fc4eac0cb9835d6d60606b5b5"
       define_method(:install) do
         bin.install "skit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vlln/skit/releases/download/v0.4.1/skit_Linux_arm64.tar.gz"
-      sha256 "546105b044de1fa7f96d0679c7b8e4e88b3969623c9fd23f90870538194ddb18"
+      url "https://github.com/vlln/skit/releases/download/v0.5.0/skit_Linux_arm64.tar.gz"
+      sha256 "10c398a0c942bed8192e277ef1f5f47387a1c600c6c7559c74695f5ae8127d82"
       define_method(:install) do
         bin.install "skit"
       end
